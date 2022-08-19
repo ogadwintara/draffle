@@ -55,7 +55,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
       marginTop: '10px',
       fontSize: '14px',
       color: theme.palette.secondary.main,
-      textShadow: '0px 0px 5px #e86bff',
+      textShadow: '0px 0px 5px #ede65f',
       padding: '0 0',
       '&:hover': {
         backgroundColor: 'transparent',

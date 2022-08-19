@@ -76,7 +76,17 @@ const tokenRegistry = {
     decimals: 9,
     logoURI: '/resources/samo-logo.png',
     tags: []
-  }
+  },
+  TSSR5RTciNRE4n4nude8WFmd7FpibpeCvzgjzT3Ni7t: {
+    chainId: 101,
+    address: 'TSSR5RTciNRE4n4nude8WFmd7FpibpeCvzgjzT3Ni7t',
+    symbol: 'TSOS',
+    name: 'TheSuperSOL',
+    decimals: 9,
+    logoURI:
+      'https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/logotoken.png',
+    tags: [],
+  },
 };
 
 export const tokenInfoMap = new Map(Object.entries(tokenRegistry));

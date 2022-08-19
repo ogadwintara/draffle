@@ -43,7 +43,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
       height: 30,
       border: '2px solid white',
       borderRadius: '2px',
-      boxShadow: '0 0 5px 0 #e86bff',
+      boxShadow: '0 0 5px 0 #ede65f',
     },
     showEndedRaffles: {
       display: 'flex',

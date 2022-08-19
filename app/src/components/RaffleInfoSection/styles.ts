@@ -36,7 +36,7 @@ export const useStyles = makeStyles<Theme, { device: DeviceType }>(
     ticketButton: {
       fontSize: '14px',
       color: theme.palette.primary.main,
-      textShadow: '0px 0px 5px #e86bff',
+      textShadow: '0px 0px 5px #ede65f',
       padding: '0 0',
       '&:hover': {
         backgroundColor: 'transparent',

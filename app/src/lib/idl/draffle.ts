@@ -31,6 +31,11 @@ export type Draffle = {
           "isSigner": false
         },
         {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false
@@ -141,11 +146,21 @@ export type Draffle = {
         },
         {
           "name": "buyerTransferAuthority",
-          "isMut": false,
+          "isMut": true,
           "isSigner": true
         },
         {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
           "isMut": false,
           "isSigner": false
         }
@@ -197,7 +212,22 @@ export type Draffle = {
           "isSigner": false
         },
         {
+          "name": "payer",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
           "isMut": false,
           "isSigner": false
         }
@@ -322,6 +352,15 @@ export type Draffle = {
           {
             "name": "max",
             "type": "u32"
+          },
+          {
+            "name": "entrants",
+            "type": {
+              "array": [
+                "publicKey",
+                1000
+              ]
+            }
           }
         ]
       }
@@ -397,16 +436,6 @@ export type Draffle = {
       "code": 6013,
       "name": "InvalidRecentBlockhashes",
       "msg": "Invalid recent blockhashes"
-    },
-    {
-      "code": 6014,
-      "name": "OnlyCreatorCanClaimNoEntrantRafflePrizes",
-      "msg": "Only the creator can calin no entrant raffle prizes"
-    },
-    {
-      "code": 6015,
-      "name": "InvalidTreasuryTokenAccountOwner",
-      "msg": "Invalid treasury token account owner"
     }
   ]
 };
@@ -444,6 +473,11 @@ export const IDL: Draffle = {
           "isSigner": false
         },
         {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "systemProgram",
           "isMut": false,
           "isSigner": false
@@ -554,11 +588,21 @@ export const IDL: Draffle = {
         },
         {
           "name": "buyerTransferAuthority",
-          "isMut": false,
+          "isMut": true,
           "isSigner": true
         },
         {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
           "isMut": false,
           "isSigner": false
         }
@@ -610,7 +654,22 @@ export const IDL: Draffle = {
           "isSigner": false
         },
         {
+          "name": "payer",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "feeAcc",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
           "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
           "isMut": false,
           "isSigner": false
         }
@@ -735,6 +794,15 @@ export const IDL: Draffle = {
           {
             "name": "max",
             "type": "u32"
+          },
+          {
+            "name": "entrants",
+            "type": {
+              "array": [
+                "publicKey",
+                1000
+              ]
+            }
           }
         ]
       }
@@ -810,16 +878,6 @@ export const IDL: Draffle = {
       "code": 6013,
       "name": "InvalidRecentBlockhashes",
       "msg": "Invalid recent blockhashes"
-    },
-    {
-      "code": 6014,
-      "name": "OnlyCreatorCanClaimNoEntrantRafflePrizes",
-      "msg": "Only the creator can calin no entrant raffle prizes"
-    },
-    {
-      "code": 6015,
-      "name": "InvalidTreasuryTokenAccountOwner",
-      "msg": "Invalid treasury token account owner"
     }
   ]
 };

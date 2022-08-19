@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) => ({
       borderColor: darken(theme.palette.primary.main, 0.2),
     },
     '&:disabled': {
-      backgroundColor: '#393939',
+      backgroundColor: '#000000',
       borderColor: '#393939',
       color: '#898989',
     },

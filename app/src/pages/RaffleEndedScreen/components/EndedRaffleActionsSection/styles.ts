@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme: Theme) => ({
     marginRight: '-5px',
     color: theme.palette.primary.main,
     '&:hover': {
-      textShadow: '0px 0px 5px #e86bff',
+      textShadow: '0px 0px 5px #ede65f',
       backgroundColor: 'transparent',
       textDecoration: 'none',
     },

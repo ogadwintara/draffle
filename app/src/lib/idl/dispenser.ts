@@ -1,5 +1,5 @@
 export type Dispenser = {
-  "version": "0.1.0",
+  "version": "0.0.0",
   "name": "dispenser",
   "instructions": [
     {
@@ -236,17 +236,17 @@ export type Dispenser = {
   ],
   "errors": [
     {
-      "code": 6000,
+      "code": 300,
       "name": "InsufficientUserFunds",
       "msg": "Insufficient user funds"
     },
     {
-      "code": 6001,
+      "code": 301,
       "name": "InsufficientVaultFunds",
       "msg": "Insufficient vault funds"
     },
     {
-      "code": 6002,
+      "code": 302,
       "name": "InvalidCalculation",
       "msg": "Invalid calculation"
     }
@@ -254,7 +254,7 @@ export type Dispenser = {
 };
 
 export const IDL: Dispenser = {
-  "version": "0.1.0",
+  "version": "0.0.0",
   "name": "dispenser",
   "instructions": [
     {
@@ -491,17 +491,17 @@ export const IDL: Dispenser = {
   ],
   "errors": [
     {
-      "code": 6000,
+      "code": 300,
       "name": "InsufficientUserFunds",
       "msg": "Insufficient user funds"
     },
     {
-      "code": 6001,
+      "code": 301,
       "name": "InsufficientVaultFunds",
       "msg": "Insufficient vault funds"
     },
     {
-      "code": 6002,
+      "code": 302,
       "name": "InvalidCalculation",
       "msg": "Invalid calculation"
     }

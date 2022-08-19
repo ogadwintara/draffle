@@ -6,11 +6,12 @@ export const useStyles = makeStyles((theme: Theme) => ({
     width: '100vw',
     height: '100vh',
     background:
-      'linear-gradient(0deg, rgba(57,9,74,1) 0%, rgba(6,18,98,1) 100%, rgba(57,9,74,1) 100%);',
+      'url(https://raw.githubusercontent.com/ogadwintara/SOSTOKEN/main/1.png)',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'fixed',
+    filter: 'blur(3px)',
   },
   content: {
     position: 'absolute',

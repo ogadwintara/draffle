@@ -4,7 +4,7 @@ import { useHistory } from 'react-router';
 
 import discordLogo from '../../assets/discord-logo.svg';
 import twitterLogo from '../../assets/twitter-logo.svg';
-import documentLogo from '../../assets/document-logo.svg';
+//import documentLogo from '../../assets/document-logo.svg';
 import Screen from '../../components/layout/Screen';
 import { routes } from '../../router/routes';
 import useCommonStyles from '../../assets/styles';
@@ -22,8 +22,8 @@ const LandingScreen: FC = () => {
     <div className={classes.root}>
       <img
         className={device === DeviceType.Phone ? 'banner-small' : 'banner'}
-        src="dRaffle-LC-banner.png"
-        alt={'Site banner'}
+        src="thesupersol.png"
+        alt={'thesupersol banner'}
         width={device === DeviceType.Phone ? '280px' : '600px'}
       />
       <div className={classes.socialLinksContainer}>
@@ -32,7 +32,7 @@ const LandingScreen: FC = () => {
             <Link
               className={classes.socialLink}
               target="blank"
-              href={`https://t.co/BtbE5rb6Bk?amp=1`}
+              href={`https://discord.com/invite/YeA9CajTe5`}
             >
               <img src={discordLogo} alt={'disord-logo'} width="50px" />
             </Link>
@@ -43,23 +43,13 @@ const LandingScreen: FC = () => {
             <Link
               className={classes.socialLink}
               target="blank"
-              href={`https://twitter.com/draffleluckclub`}
+              href={`https://twitter.com/the_supersol`}
             >
               <img src={twitterLogo} alt={'twitter-logo'} width="50px" />
             </Link>
           </Tooltip>
         </div>
-        <div className={classes.socialLinkContainer}>
-          <Tooltip title="Litepaper" placement="top">
-            <Link
-              className={classes.socialLink}
-              target="blank"
-              href={`dRaffle-litepaper.pdf`}
-            >
-              <img src={documentLogo} alt={'document-logo'} width="50px" />
-            </Link>
-          </Tooltip>
-        </div>
+
       </div>
       <div className={classes.buttonContainer}>
         <Button
@@ -69,7 +59,7 @@ const LandingScreen: FC = () => {
           onClick={() => push(routes.RAFFLES)}
           className={classes.mainButton}
         >
-          Explore raffles
+          TheSuperSOL raffle
         </Button>
       </div>
     </div>
